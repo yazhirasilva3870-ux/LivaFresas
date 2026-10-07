@@ -2,7 +2,7 @@
 // 1. ENLACE CON TU EXCEL (GOOGLE SHEETS)
 // ==========================================
 // Cambia lo que está entre comillas por tu URL de Google Apps Script (la que termina en /exec)
-const URL_BASE_DATOS = "PEGA_AQUI_TU_URL_DE_GOOGLE";
+const URL_BASE_DATOS = "Phttps://docs.google.com/spreadsheets/d/1GtN8n9kzQMeCzieY9twGAXInFRF5z1N2HRmjK_zEgDw/edit?gid=0#gid=0";
 
 
 // ==========================================
