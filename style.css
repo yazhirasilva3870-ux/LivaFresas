@@ -1,0 +1,431 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Montserrat, sans-serif, serif;
+    background-color: #fff8f5;
+    color: #4b3035;
+    line-height: 1.6;
+}
+
+
+/* =========================================
+   ENCABEZADO
+   ========================================= */
+
+header {
+    background-color: #f8dfe4;
+    padding: 20px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #e8b8c2;
+}
+
+#logoliva {
+    width: 150px;
+    padding: 5px;
+ }
+
+header h1 {
+    color: #9b4055;
+    font-size: 2rem;
+}
+
+nav {
+    display: flex;
+    gap: 10px;
+}
+
+nav button {
+    background-color: transparent;
+    border: 1px solid #b95c70;
+    color: #9b4055;
+    padding: 8px 14px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-family: inherit;
+}
+
+nav button:hover {
+    background-color: #b95c70;
+    color: white;
+}
+
+
+/* =========================================
+   CONTENIDO PRINCIPAL
+   ========================================= */
+
+main {
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+}
+
+
+/* =========================================
+   SECCIÓN DE INICIO
+   ========================================= */
+
+#inicio {
+    text-align: center;
+    padding: 80px 20px;
+}
+
+#inicio > p:first-child {
+    color: #b95c70;
+    font-size: 0.8rem;
+    letter-spacing: 3px;
+    font-weight: bold;
+}
+
+#inicio h2 {
+    font-size: 2.8rem;
+    color: #7d394b;
+    margin: 15px auto;
+    max-width: 700px;
+}
+
+#inicio p:nth-of-type(2) {
+    max-width: 600px;
+    margin: 0 auto 30px;
+    color: #765960;
+}
+
+
+/* =========================================
+   BOTONES
+   ========================================= */
+
+button {
+    font-family: inherit;
+}
+
+#inicio button,
+form > button {
+    background-color: #b95c70;
+    color: rgb(172, 110, 110);
+    border: none;
+    padding: 13px 28px;
+    border-radius: 30px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#inicio button:hover,
+form > button:hover {
+    background-color: #913f54;
+    transform: translateY(-2px);
+}
+#btn-comentarios {
+    display: inline-flex;
+    align-items: center;
+    background-color: transparent;
+    border: 1px solid #b95c70;
+    color: #9b4055;
+    padding: 8px 14px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-family: inherit;
+    transition: 0.3s;
+}
+
+#btn-comentarios:hover {
+    background-color: #b95c70;
+    color: white;
+}
+
+#btn-comentarios:hover {
+    background-color: #913f54;
+}
+
+/* =========================================
+   ENCUESTA
+   ========================================= */
+
+#encuesta {
+    background-color: #ffffff;
+    padding: 45px;
+    border-radius: 25px;
+    box-shadow: 0 8px 30px rgba(120, 70, 80, 0.08);
+    margin-bottom: 60px;
+}
+
+#encuesta > h2 {
+    text-align: center;
+    color: #7d394b;
+    margin-bottom: 40px;
+    font-size: 2rem;
+}
+
+
+/* =========================================
+   SECCIONES DEL FORMULARIO
+   ========================================= */
+
+form > div {
+    margin-bottom: 40px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #f0d9dd;
+}
+
+form > div:last-of-type {
+    border-bottom: none;
+}
+
+form h3 {
+    color: #9b4055;
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+}
+
+form p {
+    color: #765960;
+    margin-bottom: 15px;
+}
+
+
+/* =========================================
+   CAMPOS DE TEXTO
+   ========================================= */
+
+form label {
+    display: block;
+    margin-bottom: 8px;
+    color: #593b41;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="date"],
+textarea {
+    width: 100%;
+    padding: 13px;
+    margin-bottom: 20px;
+    border: 1px solid #e5c4ca;
+    border-radius: 12px;
+    background-color: #fffafa;
+    color: #b45163;
+    font-family: inherit;
+    font-size: 1rem;
+}
+
+textarea {
+    resize: vertical;
+}
+
+input:focus,
+textarea:focus {
+    outline: none;
+    border-color: #b95c70;
+    box-shadow: 0 0 0 3px rgba(185, 92, 112, 0.1);
+}
+
+
+/* =========================================
+   PRIVACIDAD
+   ========================================= */
+
+#privacidad {
+    width: auto;
+    margin-right: 8px;
+}
+
+
+#enviar {
+    display: block;
+    margin: 40px auto 0 auto; /* Lo centra horizontalmente y le da espacio arriba */
+    background-color: #d84b65; /* Color fresa más vivo y diferente */
+    color: white;
+    font-size: 1.1rem;
+    font-weight: bold;
+    padding: 15px 38px;
+    border-radius: 30px;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 4px 15px rgba(216, 75, 101, 0.3); /* Sombra suave para darle relieve */
+    transition: all 0.3s ease;
+}
+
+#enviar:hover {
+    background-color: #ba324b; /* Tono un poco más oscuro al pasar el cursor */
+    transform: translateY(-3px); /* Efecto de elevación al pasar el mouse */
+    box-shadow: 0 6px 20px rgba(216, 75, 101, 0.4);
+}
+
+
+/* =========================================
+   MENSAJE DE AGRADECIMIENTO
+   ========================================= */
+
+#agradecimiento {
+    text-align: center;
+    padding: 60px 20px;
+}
+
+#agradecimiento h2 {
+    color: #9b4055;
+    font-size: 2rem;
+}
+
+#agradecimiento p {
+    color: #765960;
+    margin-top: 10px;
+}
+
+
+/* =========================================
+   PIE DE PÁGINA
+   ========================================= */
+
+footer {
+    text-align: center;
+    background-color: #f8dfe4;
+    color: #765960;
+    padding: 25px;
+    font-size: 0.9rem;
+}
+
+
+/* =========================================
+   DISEÑO PARA CELULARES
+   ========================================= */
+
+@media (max-width: 600px) {
+
+    header {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+
+    #inicio {
+        padding: 55px 10px;
+    }
+
+    #inicio h2 {
+        font-size: 2rem;
+    }
+
+    #encuesta {
+        padding: 25px 20px;
+    }
+
+}
+/* =========================================
+   SECCIÓN DE OPINIONES DE CLIENTES
+   ========================================= */
+
+#seccion-opiniones {
+    background-color: #ffffff;
+    padding: 45px;
+    border-radius: 25px;
+    box-shadow: 0 8px 30px rgba(120, 70, 80, 0.08);
+    margin: 40px 0 60px 0;
+}
+
+#seccion-opiniones h2 {
+    text-align: center;
+    color: #7d394b;
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.subtitulo-seccion {
+    text-align: center;
+    color: #765960;
+    margin-bottom: 35px;
+}
+
+.tarjeta-vacia {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #fff8f5;
+    border-radius: 15px;
+    color: #765960;
+    font-size: 1.1rem;
+}
+
+.tarjeta-opinion {
+    background-color: #fff8f5;
+    border-left: 6px solid #b95c70;
+    padding: 22px;
+    border-radius: 18px;
+    margin-bottom: 25px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03);
+    transition: transform 0.2s ease;
+}
+
+.tarjeta-opinion:hover {
+    transform: translateY(-2px);
+}
+
+.header-tarjeta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #f0d9dd;
+    padding-bottom: 10px;
+}
+
+.nombre-cliente {
+    font-weight: bold;
+    color: #7d394b;
+    font-size: 1.1rem;
+}
+
+.fecha-visita {
+    color: #8c6a72;
+    font-size: 0.9rem;
+}
+
+.detalles-calificacion {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    background-color: #ffffff;
+    padding: 12px 18px;
+    border-radius: 12px;
+    margin-bottom: 15px;
+    font-size: 0.95rem;
+    color: #593b41;
+}
+
+.estrellas-doradas {
+    color: #FFD700;
+    font-size: 1.1rem;
+    letter-spacing: 2px;
+}
+
+.porcentaje-badge {
+    background-color: #f8dfe4;
+    color: #9b4055;
+    padding: 2px 10px;
+    border-radius: 12px;
+    font-weight: bold;
+}
+
+.comentario-cliente {
+    color: #4b3035;
+    font-style: italic;
+    font-size: 1.05rem;
+    line-height: 1.6;
+    background-color: #ffffff;
+    padding: 15px;
+    border-radius: 12px;
+    border: 1px dashed #e5c4ca;
+}
+
+.footer-tarjeta {
+    text-align: right;
+    margin-top: 10px;
+    font-size: 0.8rem;
+    color: #a08088;
+}
